@@ -1,0 +1,35 @@
+body {
+  font-family: 'eesti';
+  font-size: 1rem;
+  background: #FDFDFD;
+  font-family: 'Fanwood Text', serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Tenor Sans', sans-serif;
+}
+
+/* Flexbox */
+.flex {
+  display: flex;
+
+  &-jc-c {
+    justify-content: center;
+  }
+
+  &-jc-sb {
+    justify-content: space-between;
+  }
+
+  &-ai-c {
+    align-items: center;
+  }
+
+  &-fd-c {
+    flex-direction: column;
+  }
+
+  &-fd-r {
+    flex-direction: row;
+  }
+}

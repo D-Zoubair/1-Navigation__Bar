@@ -1,0 +1,42 @@
+@import "scss/reset";
+@import "scss/base";
+
+.hero {
+  height: 100vh;
+  width: 100vw;
+  padding: 2rem;
+
+  &__section {
+    height: 100%;
+    padding: 0 2rem;
+
+    border-radius: 0.75rem;
+
+    background-color: #f5e3e0;
+
+    text-align: center;
+  }
+
+  h1 {
+    margin-bottom: 1.5rem;
+
+    font-size: 4rem;
+    color: #3a3238;
+  }
+
+  p {
+    font-size: 1.4rem;
+    color: #6e4555;
+
+    a {
+      text-decoration: underline;
+      opacity: 1;
+
+      transition: opacity 300ms ease-in-out;
+
+      &:hover {
+        opacity: 0.85;
+      }
+    }
+  }
+}
