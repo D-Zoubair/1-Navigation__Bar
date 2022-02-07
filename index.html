@@ -6,33 +6,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon/favicon-16x16.png"
+    />
     <link rel="manifest" href="assets/favicon/site.webmanifest" />
-    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+    <link
+      rel="mask-icon"
+      href="assets/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
 
     <!-- Styles -->
     <link rel="stylesheet" type="text/css" href="src/css/main.css" />
+
+    <!-- Google Font Import - Tenor Sans -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Fanwood+Text:ital@0;1&family=Tenor+Sans&display=swap"
+      href="https://fonts.googleapis.com/css2?1&family=Tenor+Sans&display=swap"
       rel="stylesheet"
     />
 
-    <title>Quick project</title>
+    <!-- Boxicons CSS -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <title>
+      Responsive Navigation Bar with HTML, CSS & JavaScript | Dark/light Mode
+    </title>
   </head>
   <body>
-    <div class="hero">
-      <div class="hero__section flex flex-jc-c flex-ai-c flex-fd-c">
-        <h1>Quick Project by Zoubair</h1>
-        <p class="description">
-          This is a
-          <a href="#" target="_blank">Quick Starter Project</a> .
-        </p>
+    <nav class="nav">
+      <div class="nav__bar flex flex-jc-sb flex-ai-c">
+        <i class="bx bx-menu siderbarOpen"></i>
+        <span class="nav__logo"><a href="#">ZheConder</a></span>
+
+        <div class="nav__items">
+          <div class="logo-toggle">
+            <span class="nav__logo"><a href="#">ZheConder</a></span>
+            <i class="bx bx-x siderbarClose"></i>
+          </div>
+          <ul class="nav__links flex flex-ai-c">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="nav__toggle flex flex-ai-c">
+          <div class="darklight flex flex-jc-c flex-ai-c">
+            <i class="bx bx-moon moon"></i>
+            <i class="bx bx-sun sun"></i>
+          </div>
+
+          <div class="searchBox">
+            <div class="searchToggle flex flex-jc-c flex-ai-c">
+              <i class="bx bx-x cancel"></i>
+              <i class="bx bx-search search"></i>
+            </div>
+
+            <div class="searchField flex flex-ai-c">
+              <input type="text" placeholder="Search..." />
+              <i class="bx bx-search"></i>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    </nav>
 
     <script src="src/js/main.js"></script>
   </body>
